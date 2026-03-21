@@ -26,6 +26,7 @@ Como Executar o Frontend
 Via Docker
 
 docker build -t locadora-frontend .
+
 docker run -p 80:80 locadora-frontend
 
 Via Docker Compose
@@ -33,5 +34,6 @@ Via Docker Compose
 docker-compose up --build
 
 Acesso ao Sistema
+
 Após iniciar o container, acesse a interface através do navegador:
 URL: http://localhost:80
