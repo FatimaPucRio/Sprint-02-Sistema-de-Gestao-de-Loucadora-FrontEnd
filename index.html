@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP - Gestão de Locadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MVP – Gestão de Locadora</h1>
+
+        <nav class="menu-principal">
+            <button id="btnFilmes" class="btn">Filmes</button>
+            <button id="btnClientes" class="btn">Clientes</button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="areaMensagemTopo" class="alerta-sistema"></div>
+
+                <section id="secao-filmes" class="secao ativa">
+            <h2>Controle de Busca de Filmes</h2>
+
+            <div class="formulario">
+                <h3>Pesquisar Filme</h3>
+
+                <input id="tituloFilme" placeholder="Título do filme" required>
+
+                <select id="sessoesFilme" required>
+                    <option value="">Selecione o Gênero</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Comedia">Comédia</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Documentario">Documentário</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Familia">Família</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Historia">História</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Ficção Cientifica">Ficção Científica</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Guerra">Guerra</option>
+                    <option value="Faroeste">Faroeste</option>
+                </select>
+
+                <input 
+                    id="anoFilme" 
+                    type="number" 
+                    placeholder="Ano de Lançamento" 
+                    min="1900" 
+                    max="2099"
+                >
+
+                <button class="btn" type="button" onclick="buscarFilme()">Buscar</button>
+            </div>
+
+            <h3>Lista de Filmes</h3>
+            <div id="listaFilmes" class="lista-cards"></div>
+        </section>
+
+                <section id="secao-clientes" class="secao">
+            <h2>Gerenciar Clientes</h2>
+
+            <div class="formulario">
+                <h3>Cadastrar Cliente</h3>
+
+                <input 
+                    id="nomeCliente" 
+                    placeholder="Nome Completo" 
+                    pattern=".*[A-Za-z].*" 
+                    title="O nome deve conter pelo menos uma letra" 
+                    required
+                >
+
+                <input 
+                    id="emailCliente" 
+                    type="email" 
+                    placeholder="Email de Contato" 
+                    required
+                >
+
+                <input 
+                    id="telefoneCliente" 
+                    type="tel" 
+                    placeholder="Telefone (DDD + Número)" 
+                    maxlength="15" 
+                    required
+                >
+
+                <input 
+                    id="cpfCliente" 
+                    type="text" 
+                    placeholder="CPF (apenas números)" 
+                    maxlength="11" 
+                    required
+                >
+
+                <input 
+                    id="dataNascimentoCliente" 
+                    type="date" 
+                    title="Data de Nascimento" 
+                    required
+                    min="1900-01-01"
+                    max="2099-12-31"
+                >
+
+                <div class="botoes-acao">
+                    <button class="btn" id="btnCadastrarCliente" onclick="cadastrarCliente()">Cadastrar</button>
+                    <button class="btn btn-secundario" id="btnAlterarCliente" onclick="alterarCliente()" style="display:none;">Alterar</button>
+                    <button class="btn btn-limpar" onclick="limparCamposCliente()">Limpar</button>
+                </div>
+            </div>
+
+            <div class="area-listagem-clientes">
+                <h3>Lista de Clientes</h3>
+                <div id="listaClientes" class="lista-cards"></div>
+            </div>
+        </section>
+
+    </main>
+
+        <script src="app.js"></script>
+</body>
+</html>

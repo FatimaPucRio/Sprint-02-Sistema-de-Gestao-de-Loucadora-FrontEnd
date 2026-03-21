@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  front-mvp:
+    image: nginx:alpine
+    container_name: front-mvp
+    ports:
+      - "8080:80"
+    volumes:
+      # O ponto (.) agora significa: "pegue tudo desta pasta e coloque no Nginx"
+      - .:/usr/share/nginx/html:ro
