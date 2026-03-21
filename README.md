@@ -36,4 +36,4 @@ docker-compose up --build
 Acesso ao Sistema
 
 Após iniciar o container, acesse a interface através do navegador:
-URL: http://localhost:80
+URL: http://localhost:8080
