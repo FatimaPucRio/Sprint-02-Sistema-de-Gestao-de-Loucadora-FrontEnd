@@ -1,4 +1,5 @@
 Sistema de Gestão de Filmes - Frontend 
+
 Este projeto de interface (Front-End) foi desenvolvido como parte do MVP para a disciplina Desenvolvimento Full Stack Avançado da PUC-Rio.
 
 <img width="1031" height="648" alt="image" src="https://github.com/user-attachments/assets/aa75a893-f11f-4c37-bdb0-f456630318c1" />
