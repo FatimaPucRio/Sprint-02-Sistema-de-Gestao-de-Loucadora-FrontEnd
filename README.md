@@ -26,10 +26,7 @@ Como Executar o Frontend
 
 Via Docker
 
-# Construir a imagem
 docker build -t locadora-frontend .
-
-# Executar o container na porta 80
 docker run -p 80:80 locadora-frontend
 
 Via Docker Compose
