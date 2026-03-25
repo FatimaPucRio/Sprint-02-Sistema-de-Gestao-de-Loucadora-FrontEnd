@@ -51,6 +51,4 @@ docker-compose up --build
 
 Após iniciar o container, acesse a interface através do navegador:
 
-```
-http://localhost:8080
-```
+[http://localhost:8080](http://localhost:8080)
