@@ -1,4 +1,4 @@
-#Sistema de Gestão de Filmes — Frontend
+# 🎬 Sistema de Gestão de Filmes — Frontend
 
 > Projeto de interface (Front-End) desenvolvido como parte do MVP para a disciplina **Desenvolvimento Full Stack Avançado** da PUC-Rio.
 
@@ -8,7 +8,7 @@ O projeto implementa o **Cenário 1** proposto: uma interface de sistema baseada
 
 ---
 
-##Arquitetura
+## 🏗️ Arquitetura
 
 Conforme ilustrado no diagrama da arquitetura, a solução funciona da seguinte forma:
 
@@ -21,7 +21,7 @@ Conforme ilustrado no diagrama da arquitetura, a solução funciona da seguinte 
 
 ---
 
-##Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **Front-End:** HTML5, CSS3, JavaScript (Vanilla)
 - **Comunicação:** Fetch API (JSON / HTTP)
@@ -30,7 +30,7 @@ Conforme ilustrado no diagrama da arquitetura, a solução funciona da seguinte 
 
 ---
 
-##Como Executar
+## 🚀 Como Executar
 
 ### Via Docker
 
@@ -47,7 +47,7 @@ docker-compose up --build
 
 ---
 
-##Acesso ao Sistema
+## 🌐 Acesso ao Sistema
 
 Após iniciar o container, acesse a interface através do navegador:
 
